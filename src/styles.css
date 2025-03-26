@@ -1,0 +1,47 @@
+:root {
+    --color-primary: #4f46e5; /* Azul Tailwind */
+    --color-secondary: #f3f4f6; /* Gris claro */
+    --color-text: #1f2937; /* Gris oscuro */
+    --color-muted: #9ca3af; /* Gris medio */
+    --border-radius: 0.5rem;
+    --padding: 1rem;
+  }
+  
+  .contenedor {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding);
+  }
+  
+  .tarjeta {
+    width: 100%;
+    max-width: 24rem;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: var(--padding);
+  }
+  
+  .titulo {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--color-text);
+  }
+  
+  .progreso {
+    height: 4px;
+    width: 100%;
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius);
+  }
+  
+  .progreso-barra {
+    height: 100%;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease-in-out;
+  }
+  

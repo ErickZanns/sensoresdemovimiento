@@ -1,0 +1,109 @@
+/* Estilos principales para el contenedor */
+.contenedor {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(to right, #000000, #441919); /* Fondo degradado atractivo */
+  }
+  
+  /* Estilos de la tarjeta */
+  .tarjeta {
+    width: 100%;
+    max-width: 24rem;
+    background-color: #464646; /* Fondo degradado atractivo */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    padding: 20px;
+    text-align: center; /* Centrado de los textos */
+    overflow: hidden;
+  }
+  
+  /* Título principal */
+  .titulo {
+    font-size: 1.75rem; /* Tamaño de letra más grande */
+    font-weight: bold;
+    color: #1f2937; /* Color oscuro para el título */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Estilo de los datos de la tarjeta */
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilos de los textos principales */
+  .info p {
+    font-size: 1.125rem;
+    color: #333333; /* Color gris oscuro para el texto */
+    margin: 10px 0;
+  }
+  
+  /* Barra de progreso con colores personalizados */
+  .progreso {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb; /* Fondo gris claro para la barra */
+    border-radius: 10px;
+    margin-top: 16px;
+  }
+  
+  .progreso-barra {
+    height: 100%;
+    background-color: #3b82f6; /* Color azul de la barra de progreso */
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Estilo de los números de los pasos */
+  .numero-pasos {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff; /* Color blanco para los números de los pasos */
+    margin-bottom: 12px;
+    background: linear-gradient(to right, #3b82f6, #00c6ff); /* Fondo degradado para resaltar el número */
+    -webkit-background-clip: text; /* Hace que el texto tenga el gradiente */
+    color: transparent; /* Hace transparente el texto para que se vea el gradiente */
+  }
+  
+  /* Estilo del texto secundario */
+  .texto-secundario {
+    font-size: 0.875rem;
+    color: #f9fafb; /* Gris claro para los textos secundarios */
+    margin-top: 4px;
+  }
+  
+  /* Contenedor para los datos adicionales como Calorías, Distancia */
+  .datos-adicionales {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+  }
+  
+  .datos-adicionales div {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .datos-adicionales p {
+    font-size: 0.875rem;
+    color: #6b7280; /* Gris oscuro para los textos */
+  }
+  
+  .datos-adicionales span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1f2937; /* Color principal para los valores */
+  }
+  

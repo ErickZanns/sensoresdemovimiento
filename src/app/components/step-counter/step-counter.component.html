@@ -1,0 +1,30 @@
+<div class="contenedor">
+  <div class="tarjeta">
+    <h2 class="titulo">Step Counter</h2>
+
+    <!-- Número de pasos -->
+    <div class="numero-pasos">
+      <span>{{ steps }}</span>
+      <p class="texto-secundario">Pasos</p>
+    </div>
+
+    <!-- Barra de progreso en porcentaje -->
+    <div class="progreso">
+      <div class="progreso-barra" [style.width.%]="progressPercentage"></div>
+    </div>
+
+    <!-- Información adicional como meta diaria y progreso -->
+    <div class="info">
+      <p>Meta diaria: {{ goal }} pasos</p>
+      <p>{{ progressPercentage }}% alcanzado</p>
+    </div>
+
+    <!-- Datos adicionales como Calorías y Distancia -->
+    <div class="datos-adicionales">
+      <div>
+        <p>Distancia</p>
+        <span>{{ (steps * 0.0008).toFixed(2) }} km</span>
+      </div>
+    </div>
+  </div>
+</div>
