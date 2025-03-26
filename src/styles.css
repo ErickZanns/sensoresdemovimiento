@@ -1,47 +1,49 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-    --color-primary: #4f46e5; /* Azul Tailwind */
-    --color-secondary: #f3f4f6; /* Gris claro */
-    --color-text: #1f2937; /* Gris oscuro */
-    --color-muted: #9ca3af; /* Gris medio */
-    --border-radius: 0.5rem;
-    --padding: 1rem;
+  /* Paleta de colores moderna */
+  --color-background: #0f172a;
+  --color-card-background: #1e293b;
+  --color-primary: #3b82f6;
+  --color-secondary: #10b981;
+  --color-text-light: #f8fafc;
+  --color-text-muted: #94a3b8;
+
+  /* Tipografía */
+  --font-family: 'Inter', sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.25rem;
+
+  /* Espaciado y bordes */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --border-radius: 0.75rem;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-text-light);
+  line-height: 1.6;
+  font-size: var(--font-size-base);
+}
+
+/* Estilos responsive */
+@media (max-width: 480px) {
+  :root {
+    --font-size-base: 14px;
   }
-  
-  .contenedor {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding);
+
+  body {
+    font-size: var(--font-size-base);
   }
-  
-  .tarjeta {
-    width: 100%;
-    max-width: 24rem;
-    background: white;
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: var(--padding);
-  }
-  
-  .titulo {
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: var(--color-text);
-  }
-  
-  .progreso {
-    height: 4px;
-    width: 100%;
-    background-color: var(--color-secondary);
-    border-radius: var(--border-radius);
-  }
-  
-  .progreso-barra {
-    height: 100%;
-    background-color: var(--color-primary);
-    transition: width 0.3s ease-in-out;
-  }
-  
+}
